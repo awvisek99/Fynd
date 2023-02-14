@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h2>JS</h2>
+        <p id="test"></p>
+        <Script>
+            let x=10; //x is 10 :less scope
+            var y=10; //wide scope
+            //scope : the place of usage or declaration after initialization
+            {
+                let x=2;  //x is 2
+                var y=20;   //change is allowed
+            }
+            //x is 10
+            //y is 20
+            document.getElementById("test").innerHTML=y;
+            //document.getElementById("test").innerHTML=x;
+        </Script>
+    </body>
+</html>
