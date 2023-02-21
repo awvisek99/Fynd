@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            
+            function isEvenOrOdd(number, callback) { 
+                if (number % 2 == 0) {
+                    callback("even");
+                } else {
+                    callback("odd");
+                }
+            }
+            function printNumberType(type) {
+                console.log(type);
+            }
+
+            isEvenOrOdd(4, printNumberType);
+            isEvenOrOdd(3, printNumberType);
+
+        </script>
+    </body>
+</html>
