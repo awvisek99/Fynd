@@ -11,6 +11,7 @@
   "dependencies": {
     "mathematics": "^0.0.4",
     "mathjs": "^11.5.1",
+    "mongodb": "^5.1.0",
     "node": "^18.13.0"
   }
 }
