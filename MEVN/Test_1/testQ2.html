@@ -1,0 +1,38 @@
+<html>
+    <body>
+
+        <div id="test"></div>
+        <div id="test1"></div>
+
+        <script>
+            // Hoisting
+            x = 5;
+            document.getElementById("test").innerHTML= x;
+            var x;
+
+            //let and var difference
+            let a = 100;
+            var b= 101;
+            {
+                let a = 12;
+                var b= 220;
+                console.log(a);
+            }
+            console.log(a);
+            document.getElementById("test1").innerHTML = b;
+
+
+
+            // null and undefined 
+            let num1 = null;
+            let num2;
+            console.log(num1 == null); //true console.log(num2 == undefined); //true
+            console.log(num1 = undefined); //true (incorrect)
+            console.log(num2 == null); //true (incorrect) 
+
+
+
+
+        </script>
+    </body>
+</html>
