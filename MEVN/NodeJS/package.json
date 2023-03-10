@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "mathematics": "^0.0.4",
     "mathjs": "^11.5.1",
     "mongodb": "^5.1.0",
