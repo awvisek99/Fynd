@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Node.js</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+      background: aliceblue;
+    }
+  </style>
+  <body>
+    <h1></h1>
+    <form action="/" method="post">
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name" />
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      const form = document.querySelector("form");
+      const nameInput = document.querySelector("#name");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const name = nameInput.value;
+        //
+        document.getElementsByTagName("h1")[0].innerHTML = "Hello " + name;
+        fetch("/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: `name=${name}`,
+        })
+          .then((response) => response.text())
+          .then((data) => {
+            const result = document.createElement("p");
+            result.textContent = data;
+            document.body.appendChild(result);
+          })
+          .catch((error) => console.error(error));
+      });
+    </script>
+  </body>
+</html>
