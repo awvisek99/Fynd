@@ -1,0 +1,31 @@
+MVVM (Model-View-ViewModel) is a software architectural pattern that is used to
+ design user interfaces for desktop and mobile applications. 
+
+It was first introduced by Microsoft in 2005 as a variation of 
+the Model-View-Controller (MVC) pattern.
+
+In MVVM, the application is divided into three major components:
+
+1. Model: The model component represents the data and business logic of the application.
+ It encapsulates the application data and provides the necessary methods for accessing 
+ and manipulating the data.
+
+2. View: The view component represents the user interface of the application. 
+It is responsible for displaying the data to the user and capturing user input.
+
+3. ViewModel: The viewModel component acts as a bridge between the view and the model. 
+It provides the necessary data and functionality to the view and also communicates with 
+the model to retrieve and update the data.
+
+The key advantage of MVVM is its ability to separate the concerns of the application,
+ allowing for easier development and maintenance. The view and viewModel components are 
+ completely decoupled from the model, which means that changes to the user interface do 
+ not affect the underlying data model.
+
+Additionally, the use of data binding in MVVM simplifies the process of updating the
+ view whenever the underlying data changes. This allows for a more responsive and dynamic
+  user interface.
+
+Overall, MVVM is a powerful architecture pattern that can help developers create scalable
+ and maintainable applications with a clean separation of concerns between the UI and business
+  logic.

@@ -1,15 +1,12 @@
 <script>
-// eslint-disable-next-line no-undef
-defineProps({
-    test: {
-        type: String,
-        required: true,
-    },
-});
+export default {
+	name:'test',
+}
 </script>
 
 <template>
    <form action="" method="post">
+   
 		<label for="username">Username:</label>
 		<input type="text" id="username" name="username" required>
 
