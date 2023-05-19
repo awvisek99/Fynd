@@ -1,29 +1,29 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+/* eslint-disable no-undef */
+
+import { createRouter, createWebHistory } from 'vue-router'
  
-Vue.use(VueRouter)
+
  
   const routes = [
   {
     path: '/',
     name: 'signup',
-    component: () => import('../components/registration.vue')
+    component: registration,
   },
   {
     path: '/login',
     name: 'login',
-    component: () => import('../components/login.vue')
+    component: () => import('../views/login.vue')
   },
   {
     path: '/forgot-password',
     name: 'forgot-password',
-    component: () => import('../components/forgotpassword.vue')
+    component: () => import('../views/forgotpassword.vue')
   }
 ]
  
-const router = new VueRouter({
-  mode: 'history',
-  base: process.env.BASE_URL,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
  
